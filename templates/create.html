@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <title>Criar Produto</title>
+</head>
+<body>
+    <h1>Criar Produto</h1>
+    <form id="formulario-criar" method="post" action="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required><br>
+        <label for="codigo">Código:</label>
+        <input type="text" name="codigo" required><br>
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao"></textarea><br>
+        <label for="preco">Preço:</label>
+        <input type="text" name="preco" required><br>
+        <input type="submit" value="Criar">
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Voltar para Produtos</a>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
